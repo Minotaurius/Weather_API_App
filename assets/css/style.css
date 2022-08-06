@@ -41,7 +41,92 @@
     color: white;
 }
 
+.ul ul {
+    margin: 0rem;
+
+}
+
+.search-history {
+    margin: 0;
+}
+
+.past-search {
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 0;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    margin-left: 0;
+    margin: 20;
+    background-color: rgb(144, 155, 165);
+    color: black;
+}
+
 .main-content {
     padding-left: 14px;
     border: 2px solid black;
+    height: 40%;
+}
+
+.forecast {
+    border: 1px hidden;
+    padding: 5px;
+    margin: 5px;
+}
+
+.five-day {
+    size: 20px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+
+.day1 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    margin-right: 20px;
+}
+
+.day2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    margin-right: 20px;
+
+}
+
+.day3 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.day4 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.day5 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    padding: 0;
+    margin-right: 20px;
 }
