@@ -1,5 +1,10 @@
-var btn = document.querySelector(".search") 
-var searchBar = document.querySelector(".search-bar")
+var btn = document.querySelector(".search");
+var searchBar = document.querySelector(".search-bar");
+var today = moment().format('l');
+var tomorr = moment().add(1, 'days').format('l');
+var threeDays = moment().add(2, 'days').format('l');
+var fourDays = moment().add(3, 'days').format('l');
+var fiveDays = moment().add(4, 'days').format('l');
 
 var currentCity;
 
