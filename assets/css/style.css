@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+h3 {
+    font-size: 22px;
+}
+
 .main-header {
     background: linear-gradient(to right, blue, #00008B);
     padding: 1%;
@@ -73,13 +77,14 @@
     border: 1px hidden;
     padding: 5px;
     margin: 5px;
+    margin-left: 100px;
 }
 
 .five-day {
     size: 20px;
     margin-bottom: 0;
     margin-left: 100px;
-    padding-left: 100px;
+    text-align: center;
 }
 
 .day1 {
@@ -89,6 +94,8 @@
     background-color: rgb(48, 60, 95);
     color: white;
     margin-right: 20px;
+    size: 20px;
+    font-size: 2.0rem
 }
 
 .day2 {
