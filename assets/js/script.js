@@ -32,7 +32,16 @@ btn.addEventListener('click', function(event){
             return res.json()
         })
         .then(function(data) {
+            // console.log(data)
+            var currCityLon = data[0].lon;
+            var currCityLat = data[0].lat;
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${currCityLat}&lon=${currCityLon}&appid=813d1ce96b3d7fd78ff4cce567bf840d`)
+        .then(function(res) {
+            return res.json()
+        })
+        .then(function(data) {
             console.log(data)
+        })
         })
 });
 
