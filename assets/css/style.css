@@ -87,7 +87,7 @@ h3 {
     text-align: center;
 }
 
-.day1 {
+.day1-con {
     display: flex;
     flex-wrap: wrap;
     border: 1px hidden;
@@ -96,7 +96,7 @@ h3 {
     margin-right: 20px;
 }
 
-.day2 {
+.day2-con {
     display: flex;
     flex-wrap: wrap;
     border: 1px hidden;
@@ -106,17 +106,7 @@ h3 {
 
 }
 
-.day3 {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px hidden;
-    background-color: rgb(48, 60, 95);
-    color: white;
-    padding: 0;
-    margin-right: 20px;
-}
-
-.day4 {
+.day3-con {
     display: flex;
     flex-wrap: wrap;
     border: 1px hidden;
@@ -126,7 +116,17 @@ h3 {
     margin-right: 20px;
 }
 
-.day5 {
+.day4-con {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px hidden;
+    background-color: rgb(48, 60, 95);
+    color: white;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.day5-con {
     display: flex;
     flex-wrap: wrap;
     border: 1px hidden;
