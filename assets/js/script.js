@@ -16,13 +16,7 @@ $('.day3').text(fourDays)
 $('.day4').text(fiveDays)
 $('.day5').text(sixDays)
 
-
-
-// function searchHistory() {
-
-// }
-
-btn.addEventListener('click', function(event){
+btn.addEventListener('click', function citySearch(event){
     event.preventDefault()
     currentCity = searchBar.value;
     console.log(currentCity);
@@ -44,37 +38,30 @@ btn.addEventListener('click', function(event){
         $('#curr-temp').text('Temperature: ' + data.current.temp + 'F')
         $('#curr-wind').text('Wind: ' + data.current.wind_speed + 'mph')
         $('#curr-hum').text('Humidity: ' + data.current.humidity + '%')
-        $('#curr-uv').text('Current UV Index: ' + data.current.uvi)
+        var UVIndex = $('#curr-uv').text('Current UV Index: ' + data.current.uvi)
+        if (UVIndex > 0 && UVIndex <2)(this).css("color", 'green')
+
         $('#day1-temp').text('Temp: ' + data.daily[0].temp.max + 'F')
         $('#day1-wind').text('Wind: ' + data.daily[0].wind_speed + 'mph')
         $('#day1-hum').text('Humidity: ' + data.daily[0].humidity + '%')
+        var dayOneIcon = data.daily[0].weather[0].icon
+        var dayOneURL = 
+
         $('#day2-temp').text('Temp: ' + data.daily[1].temp.max + 'F')
         $('#day2-wind').text('Wind: ' + data.daily[1].wind_speed + 'mph')
         $('#day2-hum').text('Humidity: ' + data.daily[1].humidity + '%')
+
         $('#day3-temp').text('Temp: ' + data.daily[2].temp.max + 'F')
         $('#day3-wind').text('Wind: ' + data.daily[2].wind_speed + 'mph')
         $('#day3-hum').text('Humidity: ' + data.daily[2].humidity + '%')
-        $('#day4-temp').text('Tempe: ' + data.daily[2].temp.max + 'F')
+
+        $('#day4-temp').text('Tempe: ' + data.daily[3].temp.max + 'F')
         $('#day4-wind').text('Wind: ' + data.daily[3].wind_speed + 'mph')
         $('#day4-hum').text('Humidity: ' + data.daily[3].humidity + '%')
+
         $('#day5-temp').text('Temp: ' + data.daily[4].temp.max + 'F')
         $('#day5-wind').text('Wind: ' + data.daily[4].wind_speed + 'mph')
         $('#day5-hum').text('Humidity: ' + data.daily[4].humidity + '%')
-        })
-        .then(function(data) {
-
-        })
-        })
+        });
+        });
 });
-
-
-
-// btn.addEventListener('click', function(event) {
-//     event.preventDefault()
-//     console.log($(this.input));
-// })
-
-// fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=813d1ce96b3d7fd78ff4cce567bf840d")
-// .then (function(res) {
-//     return res.json();
-// });

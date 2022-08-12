@@ -54,6 +54,11 @@ h3 {
     margin: 0;
 }
 
+#spacing {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .past-search {
     flex-wrap: wrap;
     border-radius: 5px;
