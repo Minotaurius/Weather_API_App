@@ -94,6 +94,8 @@ h3 {
     background-color: rgb(48, 60, 95);
     color: white;
     margin-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .day2-con {
@@ -103,7 +105,8 @@ h3 {
     background-color: rgb(48, 60, 95);
     color: white;
     margin-right: 20px;
-
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .day3-con {
@@ -114,6 +117,8 @@ h3 {
     color: white;
     padding: 0;
     margin-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .day4-con {
@@ -124,6 +129,8 @@ h3 {
     color: white;
     padding: 0;
     margin-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .day5-con {
@@ -134,4 +141,6 @@ h3 {
     color: white;
     padding: 0;
     margin-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
