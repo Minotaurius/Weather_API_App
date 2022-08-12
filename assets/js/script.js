@@ -6,9 +6,15 @@ var tomorr = moment().add(1, 'days').format('l');
 var threeDays = moment().add(2, 'days').format('l');
 var fourDays = moment().add(3, 'days').format('l');
 var fiveDays = moment().add(4, 'days').format('l');
+var sixDays = moment().add(5, 'days').format('l');
 var currentCity;
 
 $('.current-date').text(today)
+$('.day1').text(tomorr)
+$('.day2').text(threeDays)
+$('.day3').text(fourDays)
+$('.day4').text(fiveDays)
+$('.day5').text(sixDays)
 
 
 
@@ -24,8 +30,10 @@ btn.addEventListener('click', function(event){
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${currentCity}&limit=5&appid=813d1ce96b3d7fd78ff4cce567bf840d`)
         .then(function(res) {
             return res.json()
-        });
-
+        })
+        .then(function(data) {
+            console.log(data)
+        })
 });
 
 
