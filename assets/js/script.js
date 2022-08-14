@@ -21,7 +21,7 @@ btn.addEventListener('click', function citySearch(event){
     currentCity = searchBar.value;
     console.log(currentCity);
     $('.current-city').text(currentCity)
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${currentCity}&limit=5&appid=813d1ce96b3d7fd78ff4cce567bf840d`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${currentCity}&limit=5&appid=813d1ce96b3d7fd78ff4cce567bf840d`)
         .then(function(res) {
             return res.json()
         })
@@ -59,35 +59,35 @@ btn.addEventListener('click', function citySearch(event){
         $('#day1-wind').text('Wind: ' + data.daily[0].wind_speed + 'mph')
         $('#day1-hum').text('Humidity: ' + data.daily[0].humidity + '%')
         var dayOneIcon = data.daily[0].weather[0].icon
-        var dayOneURL = 'http://openweathermap.org/img/w/' + dayOneIcon + '.png'
+        var dayOneURL = 'https://openweathermap.org/img/w/' + dayOneIcon + '.png'
         $('#day1-wi').attr('src', dayOneURL)
 
         $('#day2-temp').text('Temp: ' + data.daily[1].temp.max + 'F')
         $('#day2-wind').text('Wind: ' + data.daily[1].wind_speed + 'mph')
         $('#day2-hum').text('Humidity: ' + data.daily[1].humidity + '%')
         var dayTwoIcon = data.daily[0].weather[0].icon
-        var dayTwoURL = 'http://openweathermap.org/img/w/' + dayTwoIcon + '.png'
+        var dayTwoURL = 'https://openweathermap.org/img/w/' + dayTwoIcon + '.png'
         $('#day2-wi').attr('src', dayTwoURL)
 
         $('#day3-temp').text('Temp: ' + data.daily[2].temp.max + 'F')
         $('#day3-wind').text('Wind: ' + data.daily[2].wind_speed + 'mph')
         $('#day3-hum').text('Humidity: ' + data.daily[2].humidity + '%')
         var dayThreeIcon = data.daily[0].weather[0].icon
-        var dayThreeURL = 'http://openweathermap.org/img/w/' + dayThreeIcon + '.png'
+        var dayThreeURL = 'https://openweathermap.org/img/w/' + dayThreeIcon + '.png'
         $('#day3-wi').attr('src', dayThreeURL)
 
         $('#day4-temp').text('Tempe: ' + data.daily[3].temp.max + 'F')
         $('#day4-wind').text('Wind: ' + data.daily[3].wind_speed + 'mph')
         $('#day4-hum').text('Humidity: ' + data.daily[3].humidity + '%')
         var dayFourIcon = data.daily[0].weather[0].icon
-        var dayFourURL = 'http://openweathermap.org/img/w/' + dayFourIcon + '.png'
+        var dayFourURL = 'https://openweathermap.org/img/w/' + dayFourIcon + '.png'
         $('#day4-wi').attr('src', dayFourURL)
 
         $('#day5-temp').text('Temp: ' + data.daily[4].temp.max + 'F')
         $('#day5-wind').text('Wind: ' + data.daily[4].wind_speed + 'mph')
         $('#day5-hum').text('Humidity: ' + data.daily[4].humidity + '%')
         var dayFiveIcon = data.daily[0].weather[0].icon
-        var dayFiveURL = 'http://openweathermap.org/img/w/' + dayFiveIcon + '.png'
+        var dayFiveURL = 'https://openweathermap.org/img/w/' + dayFiveIcon + '.png'
         $('#day5-wi').attr('src', dayFiveURL)
         });
         });
